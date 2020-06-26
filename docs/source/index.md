@@ -1,4 +1,4 @@
-# Welcome to Numba-how-to's MyST documentation!
+# Welcome to Numba-how-to's documentation!
 
 
 ## Site contents
