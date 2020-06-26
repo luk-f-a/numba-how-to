@@ -8,5 +8,5 @@
 maxdepth: 2
 caption: Numba How-to
 ---
-tuples/intro.md
+tuples.md
 ```
