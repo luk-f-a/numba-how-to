@@ -13,10 +13,6 @@ Welcome! Numba is a fantastic library. It compiles Python code to machine code,
  and it is up to each user to ensure that they do what they need them to do. 
  
 [You can find all the recipes in Read the Docs.](https://numba-how-to.readthedocs.io/en/latest/)
- What
- 
- Make tuples from zip, and from list
- 
- 2d arrays can be 3d arrays with a dimension 1
+
  
  
