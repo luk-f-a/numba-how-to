@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Numba-how-to's documentation!
+Welcome to Numba-how-to's RST documentation!
 ========================================
 
 .. toctree::
