@@ -12,7 +12,7 @@ Welcome! Numba is a fantastic library. It compiles Python code to machine code,
  individual use case. These recipes have not undergone extensive testing, 
  and it is up to each user to ensure that they do what they need them to do. 
  
- [Read all the recipes in Read-the-docs](https://numba-how-to.readthedocs.io/en/latest/)
+[You can find all the recipes in Read the Docs.](https://numba-how-to.readthedocs.io/en/latest/)
  What
  
  Make tuples from zip, and from list
