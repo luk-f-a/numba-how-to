@@ -8,7 +8,7 @@ Some functions, like `literal_unroll`, require a tuple to work.
 
 ### Solution:
 
-```python
+```{code-block} python
 from numba.extending import overload
 from numba import types
 from numba.extending import intrinsic
@@ -46,7 +46,7 @@ def tuple_zip_intr(tyctx, *tys):
 
 ### Example:
 
-```python
+```{code-block} python
 
 from numba import literal_unroll, njit
 
