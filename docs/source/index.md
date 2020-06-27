@@ -14,4 +14,5 @@ maxdepth: 2
 caption: All recipes
 ---
 tuples.md
+profiling.md
 ```
