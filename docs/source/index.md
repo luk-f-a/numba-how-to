@@ -15,4 +15,5 @@ caption: All recipes
 ---
 tuples.md
 profiling.md
+numpy.md
 ```
