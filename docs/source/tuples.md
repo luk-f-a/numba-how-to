@@ -82,7 +82,7 @@ foo(a, b)
 ## How to use tuples of different length as keys in a dictionary
 
 ### Problem: 
-The keys of a dictionary must all of the same type. The type of a tuples is determined by its length,
+The keys of a dictionary must be all of the same type. The type of a tuple is determined by its length,
 and therefore tuples of different length cannot be used as keys in the same dictionary.
 
 ### Solution:
