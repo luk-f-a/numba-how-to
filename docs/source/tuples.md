@@ -19,7 +19,7 @@ def tuple_zip(*args):
 
 @overload(tuple_zip)
 def tuple_zip_ovrl(*args):
-    return tuple_zip_intr
+    return lambda *args: tuple_zip_intr(*args)
 
 @intrinsic
 def tuple_zip_intr(tyctx, *tys):
