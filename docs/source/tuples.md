@@ -40,7 +40,7 @@ def tuple_zip_intr(tyctx, *tys):
             inner_tup = cgctx.make_tuple(builder, tuples[i], inner_vals)
             values.append(inner_tup)
         res = cgctx.make_tuple(builder, sig.return_type, values)
-        cgctx.nrt.incref(builder, sig.return_type, res)    # <---- increment RC
+        cgctx.nrt.incref(builder, sig.return_type, res)    # increment RC
         return res
         
     sig = ret(tys)
