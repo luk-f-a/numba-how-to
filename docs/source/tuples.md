@@ -30,7 +30,7 @@ def tuple_zip_intr(tyctx, *tys):
     nitems = min((x.count for x in tys))
     tuples = [types.Tuple(inner_ty) for inner_ty in zip(*tys)]
     ret = types.Tuple(tuples)
-    from numba.core.cgutils import unpack_tuple
+    
     def codegen(cgctx, builder, sig, args):
         assert len(args) == 1  # it is a vararg tuple
         args_tup = unpack_tuple(builder, args[0])
@@ -39,7 +39,10 @@ def tuple_zip_intr(tyctx, *tys):
             inner_vals = [builder.extract_value(x, i) for x in args_tup]
             inner_tup = cgctx.make_tuple(builder, tuples[i], inner_vals)
             values.append(inner_tup)
-        return cgctx.make_tuple(builder, sig.return_type, values)
+        res = cgctx.make_tuple(builder, sig.return_type, values)
+        cgctx.nrt.incref(builder, sig.return_type, res)    # <---- increment RC
+        return res
+        
     sig = ret(tys)
     return sig, codegen
 ```
